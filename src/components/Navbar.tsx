@@ -3,7 +3,7 @@ const Navbar =(props: any)=>{
 
     const adminDashboard = (
         <>
-        <div className={"border flex flex-row pt-2 w-full " + props?.className}>
+        <div className={"flex flex-row pt-2 w-full " + props?.className}>
             <img src="/src/assets/logo.png" className="w-14 h-14 mr-10" />
             <MdNotificationAdd className="text-red-400 w-6 h-6 ml-8 mt-auto mb-2"/>
             <input type="text" name="search" placeholder={"Search something"} className="rounded-xl border border-black h-8 px-2 mt-auto mb-2 ml-10 self-auto" />
