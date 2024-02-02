@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
 const Leftnavbar = (props: any)=>{
     return(
-        <div className={(props?.className + " " || "") + "pt-4 border-r-2 border-r-black-600 h-dvh min-w-18"}>
+        <div className={(props?.className + " " || "") + "pt-4 border-r-2 border-r-black-600 min-w-18"}>
             <div>
                 <Avatar variant="curent_admin" className="mx-auto w-10 h-10" labelClass="text-red-400 text-sm" />
                 <Link to='/admin/dashboard' ><MdOutlineDashboard className="w-6 h-6 mx-auto mt-9 hover:border-red-400 text-red-500" /></Link>
