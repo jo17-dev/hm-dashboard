@@ -1,5 +1,9 @@
-import {BarChart, XAxis, YAxis, Bar, Tooltip, Legend, ResponsiveContainer} from 'recharts';
-
+import {BarChart, XAxis, YAxis, Bar, Legend, ResponsiveContainer} from 'recharts';
+/**
+ * 
+ * @param props {progression: Float%, containerClass, width height, barSize, }
+ * @returns 
+ */
 const Graph = (props: any)=> {
   let days: any = [13.7, 14.7, 15.7, 16.7, 17.7, 18.7, 19.7];
   let turnovers : any = [10000, 20000, 30000];
@@ -19,13 +23,15 @@ for(let i=0; i<days.length;i++){
 
 // Debut des différentes variantes
 const serviceLevelVariant = (
-    <div className={props?.containerClass || 'w-100'}>
-    <p> {props.title} </p>
+    <div className={ 'flex flex-col ' +  props?.containerClass + 'w-100 pr-2'}>
+    <p className='font-semibold'> {props.title} </p>
+    <p className='block w-fit text-red-500 font-semibold' style={{marginLeft: props?.progression || '0%'}} >{props?.progression || '0%'}</p>
     <div className='flex flex-row items-center w-100' >
         <p className='text-red-500 font-semibold px-1'>0</p>
         <div className='w-11/12 h-1 bg-red-400 bg-gradient-to-r from-red-400 to-white'></div>
-        <p className='text-red-500 font-semibold px-1'>100%</p>
+        <p className='text-red-500 font-semibold'>100%</p>
     </div>
+    <button className='ml-auto underline font-semibold text-sm' >More</button>
     </div>
 );
 

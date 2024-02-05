@@ -21,7 +21,7 @@ const StoreData = ()=>{
                             <Graph variant='bar' containerClass='w-100 ml-auto mr-auto text-sm' barSize={10} />
                         </div>
                     </div>
-                    <Graph variant='progression' containerClass='mt-6' />
+                    <Graph variant='progression' progression='75%' containerClass='mt-6' title="Service level" />
                     {/* low invetory section */}
                     <Lowinventory />
                 </div>

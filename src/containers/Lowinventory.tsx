@@ -5,12 +5,8 @@ import { FaAngleRight } from "react-icons/fa6";
 const Lowinventory = () =>{
     const ItemStatsContainer = () => {
         const items =[];
-        for(let i=0; i<7;i++){
-            if(i==0){
-                items.push(<Itemstat imgurl="/src/assets/avatar.png" inventorylevel={2} avgsales={8} />);
-            }else{
-                items.push(<Itemstat imgurl="/src/assets/avatar.png" inventorylevel={Math.ceil(Math.random()*10)} avgsales={Math.ceil(Math.random()*10)} />);
-            }
+        for(let i=0; i<6;i++){
+            items.push(<Itemstat key={i} imgurl="/src/assets/avatar.png" inventorylevel={Math.ceil(Math.random()*10)} avgsales={Math.ceil(Math.random()*10)} />);
         }
         return (
         <>
@@ -23,7 +19,7 @@ const Lowinventory = () =>{
     return(
         <div className="mt-4">
         <div className=" w-100 flex flex-row h-8 justify-between">
-            <span className="font-bold text-base" >Low inventory <span className="font-normal text-sm" >Less than 10 items</span>
+            <span className="font-semibold text-base" >Low inventory <span className="font-normal text-sm" >Less than 10 items</span>
             </span>
             <div className="mr-2">
                 <select name="low_inventory_sorting" id="inventory_sorting" className="text-sm">
