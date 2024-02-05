@@ -6,7 +6,11 @@ const Lowinventory = () =>{
     const ItemStatsContainer = () => {
         const items =[];
         for(let i=0; i<7;i++){
-            items.push(<Itemstat imgurl="/src/assets/avatar.png" inventorylevel={Math.ceil(Math.random()*10)} avgsales={Math.ceil(Math.random()*10)} />);
+            if(i==0){
+                items.push(<Itemstat imgurl="/src/assets/avatar.png" inventorylevel={2} avgsales={8} />);
+            }else{
+                items.push(<Itemstat imgurl="/src/assets/avatar.png" inventorylevel={Math.ceil(Math.random()*10)} avgsales={Math.ceil(Math.random()*10)} />);
+            }
         }
         return (
         <>
@@ -36,8 +40,8 @@ const Lowinventory = () =>{
             <FaAngleRight className="text-black w-10 h-10 hover:text-red-500 m-0 my-auto mr-2" />
         </div>
         <div className="mt-2 mx-auto w-full flex flex-row justify-center">
-            <p className="mx-4 text-sm"> <span className=" inline-block w-4 h-4 rounded-full bg-red-500"></span> Inventory level</p>
-            <p className="mx-4 text-sm"> <span className=" inline-block w-4 h-4 rounded-full bg-gray-500"></span> Dialy sales averages</p>
+            <p className="mx-4 text-sm"> <span className=" inline-block w-2 h-2 bg-red-500"></span> Inventory level</p>
+            <p className="mx-4 text-sm"> <span className=" inline-block w-2 h-2 bg-gray-800"></span> Dialy sales averages</p>
         </div>
     </div>
     )
