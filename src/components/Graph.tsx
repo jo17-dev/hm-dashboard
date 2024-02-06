@@ -1,4 +1,5 @@
 import {BarChart, XAxis, YAxis, Bar, Legend, ResponsiveContainer} from 'recharts';
+import Header from './Header';
 /**
  * 
  * @param props {progression: Float%, containerClass, width height, barSize, }
@@ -37,7 +38,7 @@ const serviceLevelVariant = (
 
 const barVariant = (
 <div className={props?.containerClass}>
-    <div className="px-2 flex content-between">
+    {/* <div className="px-2 flex content-between">
     <strong className='mr-auto'>Sales by department</strong>
     <select className='ml-auto text-black-200' name="salesduration" id="sales-history">
         <option value="week">This week</option>
@@ -45,7 +46,16 @@ const barVariant = (
         <option value="year">This year</option>
         <option value="max">Max</option>
     </select>
-    </div>
+    </div> */}
+    <Header 
+      title="Sales by department"
+      option={[
+        {displayedcontent: "This week", value:"week"},
+        {displayedcontent: "This month", value: "month"},
+        {displayedcontent: "This year", value: "year"},
+        {displayedcontent: "Max", value: "max"}
+      ]} 
+    />
     <ResponsiveContainer width={ props?.width || '100%'} height={props?.height || 200}>
         <BarChart data={datas} width={600} height={200} barSize={ props?.barSize || 20} >
         <XAxis dataKey='day' tickMargin={1} />

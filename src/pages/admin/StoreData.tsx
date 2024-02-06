@@ -1,5 +1,6 @@
+import Avatar from "../../components/Avatar";
 import Graph from "../../components/Graph";
-import Itemstat from "../../components/Itemstat";
+import Header from "../../components/Header";
 import Leftnavbar from "../../components/Leftnavbar";
 import Navbar from "../../components/Navbar";
 import Lowinventory from "../../containers/Lowinventory";
@@ -25,7 +26,23 @@ const StoreData = ()=>{
                     {/* low invetory section */}
                     <Lowinventory />
                 </div>
-                <div className="w-4/12 border border-blue-500 overflow-scroll h-full">
+                <div className="w-4/12 border border-blue-500 h-full">
+                    <div className="px-4 flex flex-row  items-center">
+                        <p className="font-semibold">Team now</p>
+                        <div className="px-auto">
+                            <Avatar className='w-12 h-12 ml-2 mx-auto' variant='curent_admin' labelContent="sales star" labelClass="text-red-500 text-sm mx-auto" />
+                        </div>
+                        <Avatar className='w-9 h-9 ml-2' />
+                        <Avatar className='w-9 h-9 ml-2' />
+                        <Avatar className='w-9 h-9 ml-2' />
+                        <Avatar className='w-9 h-9 ml-2' />
+                    </div>
+                    {/* Left and right side for right side container */}
+                    <div className="flex flex-row mt-6">
+                        <div className="w-1/2">
+                            <Header title="Returns" option={[{displayedcontent: "today", value: "today"}, {displayedcontent:"Yesterday", value: "yesterday"}]} />
+                        </div>
+                    </div>
 
                 </div>
             </div>

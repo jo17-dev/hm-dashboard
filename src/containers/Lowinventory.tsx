@@ -1,6 +1,7 @@
 import Itemstat from "../components/Itemstat";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
+import Header from "../components/Header";
 
 const Lowinventory = () =>{
     const ItemStatsContainer = () => {
@@ -18,7 +19,7 @@ const Lowinventory = () =>{
 
     return(
         <div className="mt-4">
-        <div className=" w-100 flex flex-row h-8 justify-between">
+        {/* <div className=" w-100 flex flex-row h-8 justify-between">
             <span className="font-semibold text-base" >Low inventory <span className="font-normal text-sm" >Less than 10 items</span>
             </span>
             <div className="mr-2">
@@ -29,7 +30,16 @@ const Lowinventory = () =>{
                 </select>
                 <input type="text" name="low_inventory_search" id="low_inventory_search" placeholder="Search" className=" ml-2 border-b border-gray-400" />
             </div>
-        </div>
+        </div> */}
+        <Header
+         title="Low inventory"
+         option={[
+            {displayedcontent:"Lowest", value:"lowest"},
+            {displayedcontent: "Bigger", value:"bigger"}
+            ]}
+         placeholder="Search"
+         inputClass="mx-4 border-b border-gray-400"
+        />
         <div className="flex flex-row">
             <FaAngleLeft className="text-black w-10 h-10 hover:text-red-500 m-0 my-auto mr-2" />
             <ItemStatsContainer />
