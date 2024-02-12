@@ -50,10 +50,10 @@ const StoreData = ()=>{
                                         title="Returns"
                                         option={[{displayedcontent: "today", value: "today"}, {displayedcontent:"Yesterday", value: "yesterday"}]}
                                     />
-                                    <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="Women" num={Math.ceil(Math.random()*20) -1} />
-                                    <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="Men" num={Math.ceil(Math.random()*20) -1} />
-                                    <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="Kids" num={Math.ceil(Math.random()*20) -1} />
-                                    <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="baby" num={Math.ceil(Math.random()*20) -1} />
+                                    <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="Women" num={Math.ceil(Math.random()*20) -1} numberClass="text-red-700" />
+                                    <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="Men" num={Math.ceil(Math.random()*20) -1} numberClass="text-red-700" />
+                                    <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="Kids" num={Math.ceil(Math.random()*20) -1} numberClass="text-red-700" />
+                                    <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="baby" num={Math.ceil(Math.random()*20) -1} numberClass="text-red-700" />
                                     <div className=' w-full flex px-2'>
                                         <button className='ml-auto underline font-semibold' >More</button>
                                     </div>
