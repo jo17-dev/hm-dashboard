@@ -5,13 +5,12 @@ const Header = (props: any)=>{
     if(props?.option ){
         for(let i=0;i<props.option.length;i++){
             options.push(<option value={props.option[i].value} key={i}>{props.option[i].displayedcontent}</option>)
-            console.log(options);
         }
     }
 
 
     return(
-    <header className={"flex justify-between pr-2"}>
+    <header className={"flex justify-between pr-2" +props?.containerClass}>
         <p className="font-semibold">{props?.title}</p>
 
         <div>

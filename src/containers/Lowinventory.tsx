@@ -35,7 +35,7 @@ const Lowinventory = () =>{
          title="Low inventory"
          option={[
             {displayedcontent:"Lowest", value:"lowest"},
-            {displayedcontent: "Bigger", value:"bigger"}
+            {displayedcontent: "Biggest", value:"biggest"}
             ]}
          placeholder="Search"
          inputClass="mx-4 border-b border-gray-400"
