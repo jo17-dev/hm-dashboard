@@ -14,7 +14,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: rgb(156 163 175);
-    border-radius: 5px;
+    border-radius: 2px;
 }
  
 /* Handle on hover */
@@ -28,4 +28,8 @@
 
 .h-76 {
     height: 71vh;
+}
+
+.h-61{
+    height: 70px;
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 const Itemstat = (props: any)=>{
 
@@ -15,7 +16,7 @@ const Itemstat = (props: any)=>{
                 <div className={"bg-gray-800 h-"+heightvalueFromNumber(props.avgsales)+" w-6 text-white text-center text-sm font-bold mr-auto"}>{props.avgsales} </div>
             </div>
             <p className="text-sm font-semibold"> {props?.itemName || 'Blue shirt'} </p>
-            <button className="mt-2 w-full text-sm text-white rounded-xl border border-red-500 bg-red-500 hover:bg-white hover:text-red-500">order</button>
+            <Button content="order" />
         </div>
     )
 }

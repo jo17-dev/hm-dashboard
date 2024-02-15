@@ -60,7 +60,7 @@ const barVariant = (
         <BarChart data={datas} width={600} height={200} barSize={ props?.barSize || 20} >
         <XAxis dataKey='day' tickMargin={1} />
         <YAxis />
-        <Bar dataKey='women' fill='rgb(192, 192, 192)' stackId='a'/>
+        <Bar dataKey='women' fill='rgb(156 163 175)' stackId='a'/>
         <Bar dataKey='men' fill='rgb(255, 80, 80)' stackId='a' /> 
         <Bar dataKey='kids' fill='brown' stackId='a' />
         <Legend layout='vertical' align='right' verticalAlign='middle' />

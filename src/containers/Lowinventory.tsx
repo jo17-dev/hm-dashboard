@@ -38,7 +38,7 @@ const Lowinventory = () =>{
             {displayedcontent: "Biggest", value:"biggest"}
             ]}
          placeholder="Search"
-         inputClass="mx-4 border-b border-gray-400"
+         inputClass="mx-4"
         />
         <div className="flex flex-row">
             <FaAngleLeft className="text-black w-10 h-10 hover:text-red-500 m-0 my-auto mr-2" />
