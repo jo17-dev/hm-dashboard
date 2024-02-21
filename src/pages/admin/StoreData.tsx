@@ -18,7 +18,7 @@ const StoreData = ()=>{
                     <p> Welcome to Your Store Management Data </p>
                     <div className="flex flex-row mt-4">
                         <div className="w-1/2">
-                            {/* <Graph containerClass='w-100 ml-auto mr-auto' barSize={10} /> */}
+                            <Graph variant='semiCircular' containerClass='w-100 ml-auto mr-auto' barSize={10} />
                         </div>
                         <div className="w-1/2">
                             <Graph variant='bar' containerClass='w-100 ml-auto mr-auto text-sm' barSize={10} />

@@ -1,5 +1,6 @@
-import {BarChart, XAxis, YAxis, Bar, Legend, ResponsiveContainer} from 'recharts';
+import {BarChart, XAxis, YAxis, Bar, Legend, ResponsiveContainer, PieChart, Pie} from 'recharts';
 import Header from './Header';
+import SemiCircularGraph from './CircularGraph';
 /**
  * 
  * @param props {progression: Float%, containerClass, width height, barSize, }
@@ -10,6 +11,8 @@ const Graph = (props: any)=> {
   let turnovers : any = [10000, 20000, 30000];
 
   let datas: any = [];
+
+  // let todaySale = 38250;
 
 for(let i=0; i<days.length;i++){
   datas.push(
@@ -36,17 +39,25 @@ const serviceLevelVariant = (
     </div>
 );
 
+
+const semiCircularVariant = (
+  <div className={props.containerClass}>
+        <Header 
+      title="Sales by department"
+      option={[
+        {displayedcontent: "Today", value:"week"},
+        {displayedcontent: "This week", value:"week"},
+        {displayedcontent: "This month", value: "month"},
+        {displayedcontent: "This year", value: "year"},
+        {displayedcontent: "Max", value: "max"}
+      ]} 
+    />
+    < SemiCircularGraph />
+  </div>
+);
+
 const barVariant = (
 <div className={props?.containerClass}>
-    {/* <div className="px-2 flex content-between">
-    <strong className='mr-auto'>Sales by department</strong>
-    <select className='ml-auto text-black-200' name="salesduration" id="sales-history">
-        <option value="week">This week</option>
-        <option value="month">This month</option>
-        <option value="year">This year</option>
-        <option value="max">Max</option>
-    </select>
-    </div> */}
     <Header 
       title="Sales by department"
       option={[
@@ -76,6 +87,8 @@ if(props.variant == 'bar'){
     return barVariant;
 }else if(props.variant == 'progression'){
     return serviceLevelVariant;
+}else if(props.variant == 'semiCircular'){
+  return semiCircularVariant;
 }
 
 }
