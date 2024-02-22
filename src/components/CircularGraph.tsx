@@ -1,4 +1,5 @@
-import { PieChart, ResponsiveContainer, Pie, Cell, Tooltip, Legend } from "recharts";
+import { PieChart, ResponsiveContainer, Pie, Tooltip } from "recharts";
+import Header from "./Header";
 
 const datas = [
     { name: 'Men', value: 400, color: "green" },
@@ -8,9 +9,19 @@ const datas = [
 
 const red400 = "rgb(239 68 68)";
 
-const   SemiCircularGraph = (props :  any)=>{
+const   CircularGraph = (props :  any)=>{
     return(
         <div className={props.containerClass || " "}>
+            <Header 
+                title="Sales by department"
+                option={[
+                    {displayedcontent: "Today", value:"week"},
+                    {displayedcontent: "This week", value:"week"},
+                    {displayedcontent: "This month", value: "month"},
+                    {displayedcontent: "This year", value: "year"},
+                    {displayedcontent: "Max", value: "max"}
+                ]} 
+            />
             <ResponsiveContainer width={ props?.width || '100%'} height={props?.height || 200}>
                 <PieChart width={400} height={400} >
                     <Pie 
@@ -28,4 +39,4 @@ const   SemiCircularGraph = (props :  any)=>{
     );
 }
 
-export default SemiCircularGraph;
+export default CircularGraph;

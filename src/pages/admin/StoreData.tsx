@@ -1,5 +1,5 @@
 import Avatar from "../../components/Avatar";
-import Graph from "../../components/Graph";
+import Graph from "../../containers/Graph";
 import Header from "../../components/Header";
 import Leftnavbar from "../../components/Leftnavbar";
 import Navbar from "../../components/Navbar";
@@ -17,10 +17,10 @@ const StoreData = ()=>{
                     <h1 className="text-3xl center font-bold">Hi Allen, </h1>
                     <p> Welcome to Your Store Management Data </p>
                     <div className="flex flex-row mt-4">
-                        <div className="w-1/2">
-                            <Graph variant='semiCircular' containerClass='w-100 ml-auto mr-auto' barSize={10} />
+                        <div className="w-2/6">
+                            <Graph variant='circular' containerClass='w-100 ml-auto mr-auto' barSize={10} />
                         </div>
-                        <div className="w-1/2">
+                        <div className="w-4/6">
                             <Graph variant='bar' containerClass='w-100 ml-auto mr-auto text-sm' barSize={10} />
                         </div>
                     </div>
@@ -93,8 +93,6 @@ const StoreData = ()=>{
                         </div>
                     
                     </div>
-
-
                 </div>
             </div>
 
