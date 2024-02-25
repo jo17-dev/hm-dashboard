@@ -80,18 +80,6 @@ const Table = (props: any)=>{
                     <td>16</td>
                     <td className="w-16"> <Button /> </td>
                 </tr>
-                <tr>
-                    <td> <input type="checkbox" name="" id="" /></td>
-                    <td> <Avatar className="border-none" /> </td>
-                    <td>90C0362</td>
-                    <td> Yellow Helmet </td>
-                    <td>5</td>
-                    <td className="text-blue-500 underlined">122</td>
-                    <td>4</td>
-                    <td>125</td>
-                    <td>16</td>
-                    <td className="w-16"> <Button /> </td>
-                </tr>
             </tbody>
         </table>
     )

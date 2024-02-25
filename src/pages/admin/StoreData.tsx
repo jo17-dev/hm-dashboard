@@ -11,10 +11,10 @@ const StoreData = ()=>{
     return(
         <div className="">
             <Navbar for="admin" className="w-full" />
-            <div className="flex flex-row">
-                <Leftnavbar className="flex-auto w-1/12" curentPage="/admin/dashboard"/>
+            <div className="flex flex-row justify-between">
+                <Leftnavbar curentPage="/admin/dashboard"/>
                 <div className=" w-7/12 pt-6 pl-6 h-total overflow-y-scroll pb-10">
-                    <h1 className="text-3xl center font-bold">Hi Allen, </h1>
+                    <h1 className="text-3xl center font-bold">Hi Joël, </h1>
                     <p> Welcome to Your Store Management Data </p>
                     <div className="flex flex-row mt-4">
                         <div className="w-2/6">

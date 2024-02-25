@@ -21,7 +21,7 @@ const Filter = ()=>{
                     <option value="12-02-2024">30</option>
                 </select>
             </div>
-            <input type="text" placeholder="search" className="border-b border-gray-400 ml-4 w-50" />
+            <input type="text" placeholder="search" className="border-b border-gray-400 ml-4 w-50 focus:outline-none focus:border-red-500" />
             <div className="flex flex-row mx-auto items-center">
                 <IoFilterSharp className="ml-2 w-6 h-6" />
                 <p className="ml-2">More Filters</p>

@@ -19,18 +19,6 @@ const Lowinventory = () =>{
 
     return(
         <div className="mt-4">
-        {/* <div className=" w-100 flex flex-row h-8 justify-between">
-            <span className="font-semibold text-base" >Low inventory <span className="font-normal text-sm" >Less than 10 items</span>
-            </span>
-            <div className="mr-2">
-                <select name="low_inventory_sorting" id="inventory_sorting" className="text-sm">
-                    <option value="default">Sort By</option>
-                    <option value="lowest">Lowest</option>
-                    <option value="bigger">Bigger</option>
-                </select>
-                <input type="text" name="low_inventory_search" id="low_inventory_search" placeholder="Search" className=" ml-2 border-b border-gray-400" />
-            </div>
-        </div> */}
         <Header
          title="Low inventory"
          option={[
