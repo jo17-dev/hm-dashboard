@@ -6,6 +6,18 @@
 
 # Stack used:
 
-[+] React
+[+] <a href="https://react.dev/"> React </a>
 
-[+] Tailwindcss
+[+] <a href="https://tailwindcss.com/">Tailwindcss</a>
+
+[+] <a href="https://recharts.org/">Recharts</a>
+
+# How to install and run the project
+
+[1] <code> git clone $this-repository </code> </br>
+
+[2] <code> cd hm-dashboard </code> <br>
+
+[3] <code> npm install </code> </br>
+
+[4] <code> npm run dev </code>
