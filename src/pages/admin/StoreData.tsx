@@ -13,15 +13,15 @@ const StoreData = ()=>{
             <Navbar for="admin" className="w-full" />
             <div className="flex flex-row justify-between">
                 <Leftnavbar curentPage="/admin/dashboard"/>
-                <div className=" w-7/12 pt-6 pl-6 h-total overflow-y-scroll pb-10">
+                <div className=" w-7/12 pt-6 pb-10 pr-2 h-total overflow-y-scroll">
                     <h1 className="text-3xl center font-bold">Hi Joël, </h1>
                     <p> Welcome to Your Store Management Data </p>
                     <div className="flex flex-row mt-4">
                         <div className="w-2/6">
-                            <Graph variant='circular' containerClass='w-100 ml-auto mr-auto' barSize={10} />
+                            <Graph variant='circular' containerClass='w-100 ml-auto mr-auto text-sm '  />
                         </div>
-                        <div className="w-4/6">
-                            <Graph variant='bar' containerClass='w-100 ml-auto mr-auto text-sm' barSize={10} />
+                        <div className="w-7/12 ml-auto">
+                            <Graph variant='bar' containerClass='w-100 ml-auto mr-auto text-sm ' barSize={10} />
                         </div>
                     </div>
                     <Graph variant='progression' progression='75%' containerClass='mt-6' title="Service level" />
@@ -49,6 +49,7 @@ const StoreData = ()=>{
                                     <Header
                                         title="Returns"
                                         option={[{displayedcontent: "today", value: "today"}, {displayedcontent:"Yesterday", value: "yesterday"}]}
+                                        containerClass="pl-2"
                                     />
                                     <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="Women" num={Math.ceil(Math.random()*20) -1} numberClass="text-red-700" />
                                     <Numberdescription containerClass="mt-4 m-2 w-2/5" labelContent="Men" num={Math.ceil(Math.random()*20) -1} numberClass="text-red-700" />
@@ -64,8 +65,9 @@ const StoreData = ()=>{
                                     <Numberdescription numberClass="text-5xl text-green-500" labelClass="mt-4 text-green-500 font-semibold" containerClass="bg-white" num={Math.ceil(Math.random())* 38} labelContent="Items Recycled"  />
                                 </div>
                             </div>
+                            {/* Best seller class */}
                             <div className="w-6/12">
-                                <Header title="Best seller" option={[{displayedcontent: "today", value: "today"}, {displayedcontent:"Yesterday", value: "yesterday"}]} />
+                                <Header title="Best seller" containerClass="bg-white" option={[{displayedcontent: "today", value: "today"}, {displayedcontent:"Yesterday", value: "yesterday"}]} />
                                 <div className="overflow-y-scroll h-76">
                                     <Seller 
                                     imgSrc="/src/assets/imgtemplate.jpeg" 

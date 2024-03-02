@@ -10,7 +10,7 @@ const Inventory = ()=>{
             <div className="flex flex-row">
                 <Leftnavbar curentPage="/admin/inventory" />
                 <div className="pt-6 pl-6 pr-10 h-total w-full">
-                    <h1 className="text-3xl center font-bold">Hi Allen, </h1>
+                    <h1 className="text-3xl center font-bold">Hi Joël, </h1>
                     <p> Welcome to Your Store Management Data </p>
                     <div className=" flex flex-row justify-between w-fit mt-6">
                         <p className="mr-4 border-b-2 border-red-500 cursor-pointer hover:text-red-500 ">All inventory</p>

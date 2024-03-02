@@ -10,14 +10,14 @@ const Header = (props: any)=>{
 
 
     return(
-    <header className={"flex justify-between pr-2" +props?.containerClass}>
+    <header className={"flex justify-between " +props?.containerClass}>
         <p className="font-semibold">{props?.title}</p>
 
         <div>
         {
             props?.option
-        && 
-            <select name="day_selection" id="day_selection">
+            && 
+            <select name="day_selection" id="day_selection" className="ml-auto">
                 {options}
             </select>
         }

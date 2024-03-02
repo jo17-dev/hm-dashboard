@@ -34,6 +34,7 @@ const   CircularGraph = (props :  any)=>{
                     {displayedcontent: "This year", value: "year"},
                     {displayedcontent: "Max", value: "max"}
                 ]} 
+                containerClass="text-sm"
             />
             <ResponsiveContainer width={ props?.width || '100%'} height={props?.height || 200}>
                 <PieChart width={400} height={400} barGap={0} >
