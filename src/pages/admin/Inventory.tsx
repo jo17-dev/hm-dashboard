@@ -2,8 +2,13 @@ import Leftnavbar from "../../components/Leftnavbar";
 import Navbar from "../../components/Navbar";
 import Filter from "../../components/Filter";
 import Table from "../../components/Table";
+import { useState } from "react";
 
 const Inventory = ()=>{
+    const [textToSearch, setTextTosearch] = useState("");
+    const retriveTextToSearchFromChild = (dat: string)=>{
+        setTextTosearch(dat);
+    }
     return (
         <div>
             <Navbar for="admin" />
@@ -17,8 +22,8 @@ const Inventory = ()=>{
                         <p className="mx-4 cursor-pointer hover:text-red-500 ">Low Inventory</p>
                         <p className="mx-4 cursor-pointer hover:text-red-500 ">Slow Inventory</p>
                     </div>
-                    <Filter />
-                    <Table containerClass="mt-8 table-auto w-full" />
+                    <Filter retriveTextToSearchFromChild={retriveTextToSearchFromChild} />
+                    <Table containerClass="mt-8 table-auto w-full" textToSearch={textToSearch} />
                 </div>
             </div>
         </div>

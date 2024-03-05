@@ -2,7 +2,11 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { SlPrinter } from "react-icons/sl";
 import { IoFilterSharp } from "react-icons/io5";
 
-const Filter = ()=>{
+const Filter = (props: any)=>{
+    const handleSubmitText = (e:any)=>{
+        props.retriveTextToSearchFromChild(e.target.value);
+    }
+
     return (
         <div className="w-full flex flex-row mt-4 text-sm justify-arround">
             <div className="flex flex-row items-center">
@@ -21,7 +25,7 @@ const Filter = ()=>{
                     <option value="12-02-2024">30</option>
                 </select>
             </div>
-            <input type="text" placeholder="search" className="border-b border-gray-400 ml-4 w-50 focus:outline-none focus:border-red-500" />
+            <input type="text" placeholder="search" id="searchItems" onChange={handleSubmitText} className="border-b border-gray-400 ml-4 w-50 focus:outline-none focus:border-red-500" />
             <div className="flex flex-row mx-auto items-center">
                 <IoFilterSharp className="ml-2 w-6 h-6" />
                 <p className="ml-2">More Filters</p>

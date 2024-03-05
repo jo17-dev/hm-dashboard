@@ -4,7 +4,10 @@ const Header = (props: any)=>{
 
     if(props?.option ){
         for(let i=0;i<props.option.length;i++){
-            options.push(<option value={props.option[i].value} key={i}>{props.option[i].displayedcontent}</option>)
+            options.push(
+            <option value={props.option[i].value} key={i}>
+                {props.option[i].displayedcontent}
+            </option>)
         }
     }
 
@@ -17,7 +20,7 @@ const Header = (props: any)=>{
         {
             props?.option
             && 
-            <select name="day_selection" id="day_selection" className="ml-auto">
+            <select name="day_selection" id="day_selection" className="ml-auto" onChange={props.onChangeOption} >
                 {options}
             </select>
         }
