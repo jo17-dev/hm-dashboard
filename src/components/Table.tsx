@@ -11,6 +11,7 @@ const Table = (props: any)=>{
         {itemId:'90C0361', imgUrl: "/src/assets/imgtemplate.jpeg"  ,itemName: "Black Dress 2", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120},
         {itemId:'90C0362', imgUrl: "/src/assets/logo.png"  ,itemName: "HM logo", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120},
         {itemId:'90C0363', imgUrl: "/src/assets/avatar.png"  ,itemName: "Yellow Helmet", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120},
+        {itemId:'90C0363', imgUrl: "/src/assets/avatar.png"  ,itemName: "Yellow Helmet", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120},
         {itemId:'90C0364', imgUrl: "/src/assets/imgtemplate.jpeg"  ,itemName: "Black dress", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120}
     ]);
 
@@ -18,6 +19,7 @@ const Table = (props: any)=>{
         setDatas([
             {itemId:'90C0361', imgUrl: "/src/assets/imgtemplate.jpeg"  ,itemName: "Black Dress 2", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120},
             {itemId:'90C0362', imgUrl: "/src/assets/logo.png"  ,itemName: "HM logo", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120},
+            {itemId:'90C0363', imgUrl: "/src/assets/avatar.png"  ,itemName: "Yellow Helmet", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120},
             {itemId:'90C0363', imgUrl: "/src/assets/avatar.png"  ,itemName: "Yellow Helmet", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120},
             {itemId:'90C0364', imgUrl: "/src/assets/imgtemplate.jpeg"  ,itemName: "Black dress", dialySales: 5,  levelInStore: Math.floor(Math.random()*30), levelInOderLocation: Math.floor(Math.random()*30), daysToEndOfStock: 21, expectedEntryToStock: 120}
         ]);
@@ -60,7 +62,7 @@ const Table = (props: any)=>{
     }
 
     return(
-        <table className={props?.containerClass+ " h-61 overscroll-y"}>
+        <table className={props?.containerClass+ " overflow-y-scroll"}>
             <thead>
                 <tr className="border-b border-gray-400">
                     <td></td>

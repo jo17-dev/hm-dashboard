@@ -32,12 +32,12 @@ const StoreData = ()=>{
                     <div className="px-4 flex flex-row  items-center">
                         <p className="font-semibold">Team now</p>
                         <div className="px-auto">
-                            <Avatar className='w-12 h-12 ml-2 mx-auto' variant='curent_admin' labelContent="sales star" labelClass="text-red-500 text-sm mx-auto" />
+                            <Avatar src="/src/assets/redAvatar.jpg" className='w-12 h-12 ml-2 mx-auto' variant='curent_admin' labelContent="sales star" labelClass="text-red-500 text-sm mx-auto" />
                         </div>
                         <Avatar className='w-9 h-9 ml-2' />
-                        <Avatar className='w-9 h-9 ml-2' />
-                        <Avatar className='w-9 h-9 ml-2' />
-                        <Avatar className='w-9 h-9 ml-2' />
+                        <Avatar src='/src/assets/redAvatar.jpg' className='w-9 h-9 ml-2' />
+                        <Avatar src='/src/assets/redAvatar.jpg' className='w-9 h-9 ml-2' />
+                        <Avatar src='/src/assets/girlAvatar.jpg' className='w-9 h-9 ml-2' />
                     </div>
                     {/* Left and right side for right side container */}
                     <div>

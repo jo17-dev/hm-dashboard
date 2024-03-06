@@ -24,7 +24,7 @@ const Header = (props: any)=>{
                 {options}
             </select>
         }
-        { props?.placeholder && <input type="text" placeholder={props?.placeholder} className={"mx-2 " + props?.inputClass + " focus:outline-none focus:border-b focus:border-red-500"} />}
+        { props?.placeholder && <input type="text" placeholder={props?.placeholder} onChange={(e)=>props.onChangeSearch(e.target.value)} className={"mx-2 " + props?.inputClass + " focus:outline-none focus:border-b focus:border-red-500"} />}
         </div>
     </header>
     )
