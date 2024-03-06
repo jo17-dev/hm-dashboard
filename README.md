@@ -1,7 +1,8 @@
 # H&M dashboard by jo17-dev
-![premierResult](https://github.com/jo17-dev/hm-dashboard/assets/104114820/b6efcb1c-43b6-4739-85a3-757ddda04c82)
+![premierResult](https://github.com/jo17-dev/hm-dashboard/assets/104114820/b646f8ae-046f-4da3-9ffd-983734dc096b)
 
-![deuxResult](https://github.com/jo17-dev/hm-dashboard/assets/104114820/be8b4989-4ed5-4b27-a86c-cd666803cb01)
+![deuxResult](https://github.com/jo17-dev/hm-dashboard/assets/104114820/625f039f-6fec-43c3-ae1c-7d261d342655)
+
 
 
 # Stack used:
