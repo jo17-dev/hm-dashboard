@@ -13,6 +13,9 @@
 
 [+] <a href="https://recharts.org/">Recharts</a>
 
+[+] <a href="https://react-icons.github.io/react-icons/">React-icons</a>
+
+
 # How to install and run the project
 
 [1] <code> git clone $this-repository </code> </br>
